@@ -5,16 +5,16 @@
 #ifndef DECOMP_GEOMETRIC_UTILS_H
 #define DECOMP_GEOMETRIC_UTILS_H
 
-#include <Eigen/Eigenvalues>
+// #include <Eigen/Eigenvalues>
 #include <decomp_basis/data_utils.h>
 #include <decomp_geometry/polyhedron.h>
 #include <iostream>
 
 /// Calculate eigen values
-template <int Dim> Vecf<Dim> eigen_value(const Matf<Dim, Dim> &A) {
-  Eigen::SelfAdjointEigenSolver<Matf<Dim, Dim>> es(A);
-  return es.eigenvalues();
-}
+// template <int Dim> Vecf<Dim> eigen_value(const Matf<Dim, Dim> &A) {
+//   Eigen::SelfAdjointEigenSolver<Matf<Dim, Dim>> es(A);
+//   return es.eigenvalues();
+// }
 
 /// Calculate rotation matrix from a vector (aligned with x-axis)
 inline Mat2f vec2_to_rotation(const Vec2f &v) {
